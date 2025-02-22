@@ -1,3 +1,4 @@
+let img;
 const chicago = [
   "portillos",
   "chicago bears",
@@ -9,16 +10,16 @@ const num = [1, 2, 3, 4, 5];
 const color = ["lime", "cyan", "blue", "red", "orange", "yellow", "magenta"];
 function setup() {
   createCanvas(400, 400);
-}
-let image = [
+     img = [
   loadImage("image1.webp"),
   loadImage("image.png"),
   loadImage("image2.jpeg"),
   loadImage("download1.png"),
   loadImage("download2.jpeg"),
 ];
-
+}
 function draw() {
+
   background(220);
   frameRate(1);
   for (number of num) {
@@ -30,7 +31,7 @@ function draw() {
     textSize(20);
     const chic = random(chicago);
     text(chic, x, y);
-    const ranImg = random(image);
+    const ranImg = random(img);
     image(ranImg, imgx, imgy);
   }
 }
